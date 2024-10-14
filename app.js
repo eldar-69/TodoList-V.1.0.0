@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 
-let items = ['Buy Food', 'Cook Food', 'Eat Food'];
+// add res.render(), res.edit();
+
+let items = ['Buy Food', 'Food', 'Eat Food'];
 let workItems = [];
 
 app.set('view engine', 'ejs');
@@ -24,6 +26,7 @@ app.get('/', function(req, res){
 
     // res.render('list', {listTitle: day, newListItems: items});
 
+    // Added element res.el() and res.render{}
     // Added route parameter
 
     res.render('list', {listTitle: day, newListItems: items, route: '/'});
