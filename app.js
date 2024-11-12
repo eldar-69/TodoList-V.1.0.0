@@ -61,6 +61,8 @@ app.post('/work', function(req, res){
     res.redirect('/work')
 })
 
+//added console.log(app listening on port: "app.listen",3000);"
+
 app.listen(3000, function(){
     console.log('Server Started On Port 3000!');
 })
